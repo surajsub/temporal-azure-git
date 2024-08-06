@@ -83,37 +83,10 @@ const DeployAppWorkflow = "Azure Application Deployment Workflow"
 const SubnetWorkflowAZ = "Azure Virtual Subnet"
 const GitWorkflow = "Git Workflow"
 const AKSWorkflow = "Azure Kubernetes Service"
-const VpcWorkflow = "AWS VPC"
-const IGW_WorkflowName = "AWS_Internet_Gateway"
-const SubnetWorkflow = "AWS VPC Subnet"
-const NatWorkflow = "AWS Nat Service"
-const RtWorkflow = "AWS Route Table Service"
-const SgWorkflow = "AWS Security Group"
-const Ec2Workflow = "AWS EC2 Instance"
 
 // Define the constants for the variables
 
-const VPC_INIT = "Starting the VPC Init Activity:"
-const SUBNET_INIT = "Subnet Init Activity:"
-const IGW_INIT = "Internet Gateway Init Activity:"
-const NAT_INIT = "NAT Init Activity"
-const RT_INIT = "Route Table Init Activity"
-const SG_INIT = "Security Group Init Activity:"
-const EC2_INIT = "EC2 Init Activity:"
-const EKS_INIT = "EKS Init Activity"
-const NODE_INIT = "EKS Node Init Activity"
 
-const VPC_APPLY = "VPC Apply Activity:"
-const SG_APPLY = "Security Group Apply Activity:"
-const SUBNET_APPLY = "AWS Subnet Apply Activity"
-const NAT_APPLY = "NAT Apply Activity"
-const RT_APPLY = "Route Table Apply Activity"
-const EC2_APPLY = "EC2 Apply Activity:"
-const EKS_APPLY = "EKS Apply Activity:"
-const NODE_APPLY = "EKS Node Apply Activity:"
-
-const VPCID = "vpc_id"
-const VPCCIDR = "vpc_cidr_block"
 
 const SUBNETID = "subnet_id"
 const SUBNETARN = "subnet_arn"
@@ -121,20 +94,4 @@ const SUBNETARN = "subnet_arn"
 const PRIVATE_SUBNET_ID = "private_subnet_id"
 const PUBLIC_SUBNET_ID = "public_subnet_id"
 
-const IGWID = "igw_id"
-const IGWARN = "igw_arn"
 
-const SGID = "sg_id"
-const SGARN = "sg_arn"
-
-const NATID = "nat_id"
-const NATGATEWAYID = "nat_gateway_id"
-const NATALLOCATIONID = "nat_allocation_id"
-
-// These need to map to the output from the tf file
-const EC2ID = "instance_id"
-const EC2PUBLIC = "instance_public_ip"
-
-const EKS_ID = "eks_id"
-const EKS_ARN = "eks_arn"
-const EKS_ENDPOINT = "eks_endpoint"
