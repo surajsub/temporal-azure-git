@@ -1,0 +1,13 @@
+controller:
+  replicaCount: 1
+  extraArgs:
+    ingress-class: ingress-nginx
+  publishService:
+    enabled: true
+  service:
+    annotations:
+      service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: /healthz
+      service.beta.kubernetes.io/azure-load-balancer-resource-group: temporal # The resource group where the public IP is located
+  ingressClassResource:
+    name: ingress-nginx
+  watchIngressWithoutClass: true
