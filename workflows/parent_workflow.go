@@ -113,29 +113,12 @@ func ParentWorkflow(ctx workflow.Context, vpc string, aks models.AKS, git models
 		return nil, err
 	}
 
-	/*
-
-
-		// Start the kubectl generation flow
-
-			// Start the Managed Identity
-
-			var mioutput map[string]string
-			err = workflow.ExecuteChildWorkflow(ctx, resources.ManagedIdentityWorkflow, rgOutput[utils.RG_ID]).Get(ctx, &mioutput)
-			if err != nil {
-				log.Println("Failed to execute the ManagedIdentity Workflow")
-				return nil, err
-			}
-
-
-	*/
+	// TODO - Update this	
 	results := map[string]interface{}{
 		"AzWorkflow": rgOutput,
 	}
 
-	// Start the AKS
 
-	// Start the Node Pool
 
 	return results, nil
 }
