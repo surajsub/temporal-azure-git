@@ -64,7 +64,7 @@ func main() {
 			AKSNodePoolName: os.Getenv("AKSNodePoolName"),
 			SubscriptionID:  azureSubscriptionID,
 		}, models.GitData{
-			Owner:    "REPO-OWNER",
+			Owner:    "REPO-OWNER", // Adjust these variables to your specific values
 			RepoName: "REPO-NAME",
 			GitToken: "github_pat_YOUR_GITHUBTOKEN",
 		})
