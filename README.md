@@ -12,6 +12,7 @@ Before you begin, ensure you have the following installed:
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 - [Temporal CLI](https://docs.temporal.io/docs/getting-started)
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/)
+- [Microsoft Azure](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-application?tabs=azure-cli#test-the-application)
 
 ## Setup
 
@@ -25,3 +26,5 @@ az account show - if you have multiple accounts configured then you must pick th
 kubectl version should return a value - Mine returns v1.28.2
 
 ### 3. Make sure you have terraform installed on your machine
+
+The file aks-store-quickstart.yaml can be downloaded from the Microsoft Azure Website.
